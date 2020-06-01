@@ -1,0 +1,891 @@
+{
+    "__schema": {
+      "types": [
+        {
+          "kind": "OBJECT",
+          "name": "Query",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "UserBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "String",
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Boolean",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "NiveauBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Int",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ActsAsTaggableOnTagBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesLiensCollectionNiveauBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesCollectionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MetaImageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsIndividuBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsCompagnieBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsAdresseBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "SCALAR",
+          "name": "Float",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LocationsProvinceBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LocationsCountryBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsContactBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ProfessionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsAchatBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionAuteurBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionChoixBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MatiereBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesLiensCollectionMatiereBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionMatiereBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionImageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionVideoBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MetaVideoBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesRecueilBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesRecueilsFiltreBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioDiffusionsDiffusionQuestionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MixedQuestionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SingleReponseBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "EtiquetteBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesReponseBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsIndividuMedailleBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsMedailleBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ClientsAvatarBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesPaysBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ActsAsTaggableOnTaggingBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesIndicateurBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesLiensCollectionIndicateurBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GoodiesCollectionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GoodiesGoodieBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsGraphBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsNodeBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "NodeContentType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "NodeQuestionsUnionType",
+          "possibleTypes": [
+            {
+              "name": "TheorieBaseQuery"
+            },
+            {
+              "name": "MixedQuestionBaseQuery"
+            }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "TheorieBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "KeyValueQueryType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsEdgeBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ConditionType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ConditionConfigType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceNodeBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesUserGraphBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsGraphAuteurBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsGraphMatiereBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphsGraphNiveauBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesGraphAssignmentBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphAssignmentStatusBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GraphsNodeBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "UserQuestionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GraphQuestionQueryType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "UNION",
+          "name": "NodeContentUnionType",
+          "possibleTypes": [
+            {
+              "name": "NodePageBaseQuery"
+            },
+            {
+              "name": "TheorieBaseQuery"
+            },
+            {
+              "name": "RadioDiffusionBaseQuery"
+            },
+            {
+              "name": "MixedQuestionBaseQuery"
+            }
+          ]
+        },
+        {
+          "kind": "OBJECT",
+          "name": "NodePageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "SingleNodePageQueryType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "EpubItemBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DokomaEpubEpubBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioDiffusionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioDiffusionsMinutageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioDiffusionsMinutageUploadBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "FileBaseQueryType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioMessageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "RadioDiffusionsDiffusionImageBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireLiensMotDiffusionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireMotBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireMotTypeConteneurGlobalized",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireMotTypeConteneurImage",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "HypeAnimationBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "HypeAnimationTypeConteneurGlobalized",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "HypeLiensAnimationableBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireThematiqueBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireThematiqueTypeConteneurGlobalized",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireThematiqueTypeConteneurMots",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireGestionnaireBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireGestionnaireTypeConteneurAliases",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireGestionnaireTypeConteneurGlobalized",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireGestionnaireTypeConteneurMots",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireGestionnaireTypeConteneurMotsThematiques",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MetaIframeBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurMoyennes",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurUtilisateurValeur",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurDataParUtilisateurs",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurNoeudValeur",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurExerciceGraphsParUtilisateurs",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurExerciceNodeEnCours",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurQuestions",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GoodiesCollectionBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GoodiesGoodieBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "NiveauBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "MatiereBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesQuestionBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesQuestionRelationSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "EnumeratedType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionTypeConteneurTemps",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesQuestionOpinionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesRecueilBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesRecueilRelationSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MixedBlocBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsIndividuBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsCompagnieBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "MetaMotBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "MetaMotBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "MetaImageBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ActionsFonctionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ActionsVariableBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ActionsCollectionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "CollectionItemsType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "VocabulaireExpressionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "VocabulaireRelationExpressionBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "EpubEpubBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "JetonQueryType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "EpubEpubFulltextQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "EpubEpubBaseSearch",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "LivreBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurMoyenne",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurPaysValeur",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurTendance",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurTendances",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurTendanceAnnee",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurMediane",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurParIndicateurs",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurParPays",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurAnnees",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurAnnee",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurMondial",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurDonuts",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurDonut",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurCompareParents",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "DonneesDatumTypeConteneurPourcentageAnnee",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "GlossaireMotTypeConteneurSearchMots",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GlossaireMotTypeFiltresInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "Mutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GraphsGraphBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GraphsNodeBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "KeyValueInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "NodeContentMutationType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "GraphsEdgeBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ConditionInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ConditionConfigInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ResultatBaseQuery",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "ExercicesExerciceGraphTypeConteneurFinirNoeud",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesQuestionBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "MutateRelationsInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesQuestionOpinionBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ExercicesReponseBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsIndividuBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "IndividuRelsInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsContactBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "RelCompagnieInputType",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsAdresseBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "ClientsCompagnieBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "INPUT_OBJECT",
+          "name": "TheorieBaseMutation",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__Schema",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__Type",
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "__TypeKind",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__Field",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__InputValue",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__EnumValue",
+          "possibleTypes": null
+        },
+        {
+          "kind": "OBJECT",
+          "name": "__Directive",
+          "possibleTypes": null
+        },
+        {
+          "kind": "ENUM",
+          "name": "__DirectiveLocation",
+          "possibleTypes": null
+        }
+      ]
+    }
+  }

@@ -1,0 +1,50 @@
+{
+  "name": "guessDraw",
+  "version": "1.0.0",
+  "private": true,
+  "description": "My stylish Nuxt.js project",
+  "author": "gabriel",
+  "scripts": {
+    "build": "nuxt build",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "generate": "nuxt generate",
+    "precommit": "yarn lint",
+    "start": "cross-env NODE_ENV=production node server/index.js"
+  },
+  "dependencies": {
+    "@nuxtjs/apollo": "^4.0.0-rc8",
+    "@tensorflow/tfjs": "^1.2.2",
+    "@tensorflow/tfjs-vis": "^1.1.0",
+    "apollo-link-http": "^1.5.15",
+    "axios": "^0.19.0",
+    "cookie-universal-nuxt": "^2.0.16",
+    "cookieparser": "^0.1.0",
+    "cross-env": "^5.2.0",
+    "express": "^4.16.4",
+    "fabric": "^3.2.0",
+    "graphql-tag": "^2.10.1",
+    "nuxt": "^2.0.0",
+    "pug": "^2.0.4",
+    "pug-plain-loader": "^1.0.0",
+    "pug-template-loader": "^1.1.0",
+    "tachyons": "^4.11.1"
+  },
+  "devDependencies": {
+    "@nuxtjs/eslint-config": "^0.0.1",
+    "@nuxtjs/eslint-module": "^0.0.1",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.15.1",
+    "eslint-config-standard": ">=12.0.0",
+    "eslint-plugin-import": ">=2.16.0",
+    "eslint-plugin-jest": ">=22.3.0",
+    "eslint-plugin-node": ">=8.0.1",
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "eslint-plugin-promise": ">=4.0.1",
+    "eslint-plugin-standard": ">=4.0.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "nodemon": "^1.18.9",
+    "vue-cli-plugin-axios": "^0.0.4"
+  }
+}

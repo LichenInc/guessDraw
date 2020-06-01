@@ -1,0 +1,9 @@
+mutation createGraphAssignment_deux($graph_id: String) {
+  create_graph_assignment_deux(graph_id: $graph_id) {
+    created_at graph{
+      id
+    } status{
+      finished in_process
+    }
+  }
+}

@@ -1,0 +1,5 @@
+mutation exercice_graph_send_reponse($graph_id: String!, $reponse: [String]!) {
+  exercice_graph_send_reponse(graph_id: $graph_id, reponse: $reponse) {
+    note finished node_id
+  }
+}

@@ -1,0 +1,3 @@
+mutation questions_envoyer_reponse($graph_id: String!, $question_id: String!, $reponse: [String]!, $temps: Int!) {
+  questions_envoyer_reponse(graph_id: $graph_id, question_id: $question_id, reponse: $reponse, temps: $temps)
+}

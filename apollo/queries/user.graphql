@@ -1,0 +1,16 @@
+query user($ids: [String]) {
+  user {
+    id
+    nom prenom anonyme graphs_accessible(ids: $ids){
+      id titre
+    } exercice_graphs{
+      id status mark graph{id titre} exercice_nodes{
+        id goodie_points
+      } graph{
+         tag_invisibles{
+          name
+        }
+      }
+    }
+  }
+}

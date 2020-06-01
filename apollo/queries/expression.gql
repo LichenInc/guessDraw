@@ -1,0 +1,23 @@
+query expression($id: String!) {
+  expression(id: $id) {
+    id
+    titre
+    description
+    couleur
+    images_fond{id titre url_to_image dominant_color image_type}
+    images_regulieres{id titre url_to_image dominant_color image_type}
+    videos{titre id video_content_type video_size code url_to_video}
+    radio_message{id titre audio_url}
+    lotties{lottie{id json} style}
+    fonctions {
+      id
+      graphql
+      variables{
+        id name mandatory type_variable
+      }
+      host
+    } tag_invisibles{
+      id name
+    }
+  }
+} 

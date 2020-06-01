@@ -1,0 +1,28 @@
+query get_current_node($graph_id: String!) {
+  get_current_node(graph_id: $graph_id) {
+    id titre description graph_id variables{
+      key value
+    } target_nodes{
+      id titre description
+    } outgoing_edges{
+      id position target_id target{ id titre variables{
+      key value
+    } data{
+      kind ids
+    }}
+    condition{
+        kind config{
+          max min
+        }
+      }
+    } 
+    data{
+      kind ids
+    } 
+    questions{
+      ...on MixedQuestionBaseQuery{
+        id titre
+      }
+    }
+  }
+} 

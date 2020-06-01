@@ -1,0 +1,7 @@
+mutation finir_noeud($graph_id: String!, $next_node_id: String) {
+  finir_noeud(graph_id: $graph_id, next_node_id: $next_node_id) {
+    graph_finished next_node{
+      id titre
+    } note
+  }
+}

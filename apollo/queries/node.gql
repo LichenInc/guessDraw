@@ -1,0 +1,25 @@
+query node($id: String!) {
+  node(id: $id) {
+    id titre description graph_id variables{
+      key value
+    } target_nodes{
+      id titre description
+    } outgoing_edges{
+      id position target_id condition{
+        kind config{
+          max min
+        }
+      } target{ id titre
+        data{ kind ids} variables{
+          key value
+        }
+      }
+    } data{
+      kind ids
+    } questions{
+      ...on MixedQuestionBaseQuery{
+        id titre
+      }
+    }
+  }
+} 

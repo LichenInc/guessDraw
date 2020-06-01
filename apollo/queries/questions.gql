@@ -1,0 +1,18 @@
+query questions($ids: [String]) {
+  questions(ids: $ids) {
+    aide auteurs{id nom prenom avatar{id image{id image_type url_to_image}}} code
+    choix{ id description id exercices_question_id position titre options pointage mot_anglais{
+      description id titre mot_type
+    }} comportement tensor_flow_modele
+    description diffusions_questions{ id position questionable_type question{id titre temps}}
+    formule formule_type id images{id image_type titre url_to_image} images_exemples{id titre image_type url_to_image}
+    integer_id livre_id locale pointage options questions_images{id exercices_question_id options}
+    questions_videos{ id meta_video_id exercices_question_id options } recueils{id titre}
+    temps theorie titre videos{id titre description url_to_video video_name video_size video_content_type}
+    videos_exemples{id titre description url_to_video video_name video_size video_content_type} solution solution_type
+    matieres{id titre} niveaux{id titre} radio_message{id audio_url titre} bonne_reponse_message mauvaise_reponse_message tag_invisibles{
+      couleur id name svg } tag_visibles{ couleur id name svg titre} lotties{lottie{id json} style} images_pictogrammes {
+      id url_to_image image_type
+    } categorie
+  }
+}

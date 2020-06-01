@@ -1,0 +1,11 @@
+query graph($id: String!) {
+  graph(id: $id) {
+    id
+    root_id
+    description
+    titre
+    tag_visibles{
+      id name
+    }
+  }
+}
